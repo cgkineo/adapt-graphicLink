@@ -1,19 +1,20 @@
 {
-  "name": "adapt-graphicLink",
-  "version": "2.0.4",
-  "framework": "^2.0.0",
-  "homepage": "https://github.com/oliverfoster/adapt-graphicLink",
-  "displayName" : "Graphic Link",
-  "component" : "graphiclink",
-  "assetFields" : [
-    "_graphic.small",
-    "_graphic.large"
-  ],
-  "description": "Graphic component which dynamically displays small and large images of different resolutions based upon device width, with a clickable link",
-  "main": "/js/adapt-graphicLink.js",
-  "keywords": [
-    "adapt-plugin",
-    "adapt-component"
-  ],
-  "license": "GPLv3"
+    "name": "adapt-graphicLink",
+    "repository": "git://github.com/oliverfoster/adapt-graphicLink.git",
+    "framework": "^2.0.0",
+    "version": "2.0.4",
+    "homepage": "https://github.com/oliverfoster/adapt-graphicLink",
+    "displayName": "Graphic Link",
+    "component": "graphiclink",
+    "assetFields": [
+        "_graphic.small",
+        "_graphic.large"
+    ],
+    "description": "Graphic component which dynamically displays small and large images of different resolutions based upon device width, with a clickable link",
+    "main": "/js/adapt-graphicLink.js",
+    "keywords": [
+        "adapt-plugin",
+        "adapt-component"
+    ],
+    "license": "GPLv3"
 }
