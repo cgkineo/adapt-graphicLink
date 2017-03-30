@@ -2,7 +2,7 @@
 
 **Graphic Link** is a *presentation component* for the [Adapt framework](https://github.com/adaptlearning/adapt_framework).  
 
-**Graphic Link** displays graphic content that has been optimized for various devices. The component swaps out images based upon the device's screen size. These device widths are specified in *less/generic.less* of the [Vanilla theme](https://github.com/adaptlearning/adapt-contrib-vanilla). When the graphic is clicked it will take the use to a url.
+**Graphic Link** displays graphic content that has been optimized for various devices. The component swaps out images based upon the device's screen size. These device widths are specified in *less/generic.less* of the [Vanilla theme](https://github.com/adaptlearning/adapt-contrib-vanilla). When the graphic is clicked it will take the learner to a url.
 
 ## Installation
 
@@ -34,7 +34,7 @@ guide the learner’s interaction with the component.
 
 **_url** (string): When the graphic is clicked this is the url it will follow.  
 
-**_setCompletionOn** (string): This value determines when the component registers as complete. Acceptable values are `"click"` and `"inview"`. `"click"` requires the learner to navigate to each slide. `"inview"` requires the **Graphic Link** component to enter the view port completely, top and bottom. 
+**_setCompletionOn** (string): This value determines when the component registers as complete. Acceptable values are `"click"` and `"inview"`. `"click"` requires the learner to click on the graphic. `"inview"` requires the **Graphic Link** component to enter the view port completely, top and bottom. 
 
 **_graphic** (object): The image that constitutes the component. It contains values for **alt**, **large**, and **small**.
 
