@@ -5,7 +5,7 @@ define(function(require) {
 
     var Graphic = ComponentView.extend({
         
-        {
+        events: {
             "click .graphiclink-widget": "onClick" 
         },
 
@@ -51,6 +51,9 @@ define(function(require) {
 
         onClick: function() {
             window.open(this.model.get("_url"), "_blank");
+            if (this.completionEvent == "click") {
+                this.setCompletionStatus();
+            }
         },
 
         remove: function() {
@@ -70,10 +73,14 @@ define(function(require) {
 
                 if (setupInView) {
                     // Bind 'inview' once the image is ready.
-                    this.$('.component-widget').on('inview', _.bind(this.inview, this));
+                    this.completionEvent = (!this.model.get('_setCompletionOn')) ? 'click' : this.model.get('_setCompletionOn');
+                    if (this.completionEvent != "click") {
+                        this.$('.component-widget').on('inview', _.bind(this.inview, this));
+                    }
                 }
             }, this));
         }
+
     });
 
     Adapt.register('graphiclink', Graphic);

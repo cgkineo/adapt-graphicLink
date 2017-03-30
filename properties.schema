@@ -80,6 +80,16 @@
       "validators": [],
       "help": "The URL to navigate to when the graphic is clicked",
       "translatable": true
+    },
+    "_setCompletionOn": {
+      "type":"string",
+      "required":true,
+      "enum": ["inview", "click"],
+      "default": "inview",
+      "title": "Set Completion of Graphic Link on",
+      "inputType": {"type": "Select", "options":["inview", "click"]},
+      "validators": ["required"],
+      "help": "This tells Adapt when to set the graphic link to complete"
     }
   }
 }
