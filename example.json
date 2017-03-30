@@ -1,19 +1,23 @@
     {
         "_id":"c-30",
         "_parentId":"b-15",
-        "_type":"component",
-        "_component":"graphic",
-        "_classes":"",
-        "_layout":"left",
-        "title":"Here is a graphic object",
-        "displayTitle":"Here is a graphic object",
-        "body":"Hi everybody!",
-        "instruction":"",
+        "_type": "component",
+        "_component": "graphiclink",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Graphic Link",
+        "displayTitle": "Graphic Link",
+        "body": "This is the graphic component body. You can introduce your graphic or you may just want to let the graphics do the talking.<br><br>Component can either be single or spanned.",
+        "instruction": "",
         "_graphic": {
-            "alt": "alt text",
-            "large": "http://cdn.lipstiq.com/wp-content/uploads/2013/07/minions-film.jpg",
-            "small": "http://minionslovebananas.com/images/check-in-minion.jpg",
-            "attribution":"Copyright © 2015"
+            "large": "course/en/images/full_width.jpg",
+            "small": "course/en/images/full_width.jpg",
+            "alt": "Placeholder graphic.",
+            "attribution": ""
         },
-        "_url": "http://www.google.com"
-    }
+        "_url": "https://www.google.com",
+        "_setCompletionOn": "inview",
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
