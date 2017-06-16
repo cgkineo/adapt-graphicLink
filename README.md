@@ -34,6 +34,8 @@ guide the learner’s interaction with the component.
 
 **_url** (string): When the graphic is clicked this is the url it will follow.  
 
+**_target** (string): The url will open on target. Acceptable values are `_blank`, `_parent`, `_self` or `_top`.
+
 **_setCompletionOn** (string): This value determines when the component registers as complete. Acceptable values are `"click"` and `"inview"`. `"click"` requires the learner to click on the graphic. `"inview"` requires the **Graphic Link** component to enter the view port completely, top and bottom. 
 
 **_graphic** (object): The image that constitutes the component. It contains values for **alt**, **large**, and **small**.
