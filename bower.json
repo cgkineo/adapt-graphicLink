@@ -2,7 +2,7 @@
     "name": "adapt-graphicLink",
     "repository": "git://github.com/oliverfoster/adapt-graphicLink.git",
     "framework": "^2.0.0",
-    "version": "2.0.5",
+    "version": "2.0.6",
     "homepage": "https://github.com/oliverfoster/adapt-graphicLink",
     "displayName": "Graphic Link",
     "component": "graphiclink",
