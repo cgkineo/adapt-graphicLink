@@ -50,7 +50,7 @@ define(function(require) {
         },
 
         onClick: function() {
-            window.open(this.model.get("_url"), "_blank");
+            window.open(this.model.get("_url"), this.model.get("_target") || "_blank");
             if (this.completionEvent == "click") {
                 this.setCompletionStatus();
             }
