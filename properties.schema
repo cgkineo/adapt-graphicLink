@@ -81,6 +81,16 @@
       "help": "The URL to navigate to when the graphic is clicked",
       "translatable": true
     },
+    "_target": {
+      "type":"string",
+      "required":true,
+      "enum": ["_blank", "_parent", "_self", "_top"],
+      "default": "_blank",
+      "title": "Url target",
+      "inputType": {"type": "Select", "options":["_blank", "_parent", "_self", "_top"]},
+      "validators": ["required"],
+      "help": "How should the url open"
+    },
     "_setCompletionOn": {
       "type":"string",
       "required":true,
