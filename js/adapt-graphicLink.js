@@ -51,7 +51,8 @@ define(function(require) {
 
         onClick: function() {
             var url = this.model.get("_url");
-            switch (this.model.get("_target")) {
+            var target = this.model.get("_target") || "_blank";
+            switch (target) {
                 case "_self":
                     if (url.substr(0,1) === "#") {
                         Backbone.history.navigate(url, { trigger: true });
@@ -60,11 +61,10 @@ define(function(require) {
                     }
                     break;
                 default:
-                    window.open(this.model.get("_url"), this.model.get("_target") || "_blank");
+                    window.open(url, target);
             }
-            if (this.completionEvent == "click") {
-                this.setCompletionStatus();
-            }
+            if (this.completionEvent !== "click") return;
+            this.setCompletionStatus();
         },
 
         remove: function() {
